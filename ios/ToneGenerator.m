@@ -52,7 +52,7 @@ void startTone(int dtmf, int durationMs) {
   err = AudioOutputUnitStart(toneUnit);
     
   // Stop the tone after durationMs (or until stopTone is called)
-  dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)((durationMs/1000) * NSEC_PER_SEC));
+  dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)((durationMs/1000.0) * NSEC_PER_SEC));
   dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
     stopTone();
   });
