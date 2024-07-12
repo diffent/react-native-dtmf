@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.description  = <<-DESC
                   RNDtmf
                    DESC
-  s.homepage     = "homepage"
+  s.homepage     = "https://github.com/diffent/react-native-dtmf.git"
   s.license      = "MIT"
   # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
   s.author             = { "author" => "author@domain.cn" }
